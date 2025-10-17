@@ -11,3 +11,5 @@ Production  www.amazon.com
 Staging     www.stag.amazon.com
 QA / develop www.dev.amazon.com
 Local env
+
+## Staging
