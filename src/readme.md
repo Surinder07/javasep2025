@@ -16,8 +16,10 @@ Local env
 
 
 ## branches
-1. git branch - to check the current branch 
+1. git branch branchName - to check the current branch 
 2. git checkout branchName - to switch to another branch
 3. git checkout -b branchName - to create and switch to another branch 
+4. git branch -D test - to delete the branch 
+
 
 
