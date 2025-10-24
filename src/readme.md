@@ -35,5 +35,19 @@ feature
 scenario : merge feature branch to staging 
 we should be checked out on staging and then merge feature
 
-## stash 
 
+master branch is locked
+staging branch is locked 
+
+In order to merge to staging or master, 
+its done through a pull request(PR) / code review 
+it requires approval of the team members 
+
+
+
+
+
+## stash 
+temporary store changes at a location and bring them back when needed 
+git stash 
+git stash pop = to bring back changes 
