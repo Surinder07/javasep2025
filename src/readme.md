@@ -22,4 +22,18 @@ Local env
 4. git branch -D test - to delete the branch 
 
 
+## merging 
+merge your changes to the other branch
+
+
+master
+  |
+staging 
+  |
+feature
+
+scenario : merge feature branch to staging 
+we should be checked out on staging and then merge feature
+
+## stash 
 
