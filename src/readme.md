@@ -53,3 +53,9 @@ it requires approval of the team members
 temporary store changes at a location and bring them back when needed 
 git stash 
 git stash pop = to bring back changes 
+
+
+1. create a branch from staging, 
+feature_Chetan 
+
+and create a pull request which can be merge to staging 
