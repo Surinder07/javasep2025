@@ -58,4 +58,18 @@ git stash pop = to bring back changes
 1. create a branch from staging, 
 feature_Chetan 
 
-and create a pull request which can be merge to staging 
+and create a pull request which can be merge to staging
+
+
+
+## revert 
+revert back to the previous commit change, but does not change the history
+git revert commit 
+
+
+## reset 
+revert back to the previous commit as per the commit id, and delete the commit completely 
+git reset comimtid 
+
+
+## rebase [read about it.]
