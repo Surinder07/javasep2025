@@ -1,16 +1,22 @@
 public class Student {
     private String id;
     private String name;
-    private String email;
-    private String course;
+    private double cash;
 
-    public Student(String id, String name, String email, String course) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.course = course;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", cash=" + cash +
+                '}';
     }
 
+    public Student(String id, String name, double cash) {
+        this.id = id;
+        this.name = name;
+        this.cash = cash;
+    }
 
     public String getId() {
         return id;
@@ -28,19 +34,11 @@ public class Student {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public double getCash() {
+        return cash;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getCourse() {
-        return course;
-    }
-
-    public void setCourse(String course) {
-        this.course = course;
+    public void setCash(double cash) {
+        this.cash = cash;
     }
 }
