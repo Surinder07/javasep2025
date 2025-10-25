@@ -6,7 +6,7 @@ public class MainSocialMedia {
 
         Facebook facebook = new Facebook();
         facebook.chat();
-        facebook.findfriends("Chetan");
+        facebook.findFriends("Chetan");
         facebook.search("Lovepreet");
         System.out.println();
 
@@ -14,7 +14,7 @@ public class MainSocialMedia {
 
         Instagram instagram = new Instagram();
         instagram.chat();
-        instagram.findfriends("Edafe");
+        instagram.findFriends("Edafe");
         instagram.shareImages();
         instagram.watchReels();
         System.out.println();

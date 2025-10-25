@@ -1,10 +1,11 @@
 package Communication;
 
 public class Snapchat implements SocialMedia {
-    void Streaks(){
+    void Streaks() {
         System.out.println("can be used to create streaks with friends");
     }
-    void filters(){
+
+    void filters() {
         System.out.println("you can search different type of filters");
     }
 
@@ -14,7 +15,7 @@ public class Snapchat implements SocialMedia {
     }
 
     @Override
-    public void findfriends(String name) {
+    public void findFriends(String name) {
 
     }
 
