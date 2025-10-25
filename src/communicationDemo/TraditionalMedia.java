@@ -2,6 +2,6 @@ package communicationDemo;
 
 public interface TraditionalMedia {
 
-    public void readNews();
-    public void getUpdates();
+    void readNews();
+    void getUpdates();
 }
