@@ -1,23 +1,21 @@
-package Nov01;
-
 public class Bank {
+
     double balance;
-    double accountnumber;
+
 
     public Bank(double balance) {
         this.balance = balance;
     }
 
     public double getBalance() {
+
         return balance;
     }
 
     public double withdraw(double amount) {
         if (balance < amount) {
-
-            throw new InsufficientBalanceException("Insufficient Balance");
+       //     throw new InsuffiencientBalance("Insufficient Balance");
         }
-
         balance = balance - amount;
         return balance;
     }
@@ -28,6 +26,5 @@ public class Bank {
         return balance;
     }
 }
-
 
 

@@ -1,5 +1,3 @@
-package Nov01;
-
 public class BankMain {
 
     public static void main (String[] args)
