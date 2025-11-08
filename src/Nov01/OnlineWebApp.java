@@ -3,37 +3,47 @@ package Nov01;
 public class OnlineWebApp {
 
 
-    public void Register() {
-        System.out.println("Registration Successful ...");
-
+    public void Register(String email) throws InvalidEmailLengthException {
+        if (email.length() < 4){
+            throw new InvalidEmailLengthException("Invalid email exception !");
+        }
     }
 
-    public void emailConfirmation() {
-        Register();
+    public void emailConfirmation(String email,String username) throws InvalidEmailLengthException {
+        Register(email);
         System.out.println("Email notification Sent ...");
     }
 
-    public void login() {
+    public void login(String email, String username) throws InvalidEmailLengthException {
 
-        emailConfirmation();
+        if(username.equals(email))
+        // if (email.length() < 5)
+        {
+            throw new InvalidCredentialsException("Invalid Credentials exception ...");
+        }
+        emailConfirmation(email,username);
         System.out.println("User is able to login ...");
     }
 
-    public void Shop()
-    {
-        login();
+    public void Shop(String email,String username) throws InvalidEmailLengthException {
+        login(email,username);
         System.out.println("Find item to shop and checkout");
     }
 
-    public void Payment()
+    public void Payment(String email,String username) throws InvalidEmailLengthException
     {
-        Shop();
+        Shop(email,username);
         System.out.println("Make Payment");
     }
 
-    public void ecom()
+    public void ecom(String email,String username) throws InvalidEmailLengthException
     {
-      Payment();
+        try{
+      Payment(email,username);}
+        catch (InvalidEmailLengthException e)
+        {
+            e.printStackTrace();
+        }
     }
 
 }
