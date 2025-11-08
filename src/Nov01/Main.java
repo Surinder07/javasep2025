@@ -14,7 +14,9 @@ public class Main {
         String email = scanner.next();
         System.out.println("Enter the Username : ");
         String username = scanner.next();
-        onlineWebApp.ecom(email,username);
+        onlineWebApp.ecomApp(email,username,PaymentMethod.CREDIT_CARD);
+        onlineWebApp.ecomApp(email,username,PaymentMethod.MASTER_CARD);
+
         System.out.println("browse more ...");
         System.out.println("End of App ...");
 

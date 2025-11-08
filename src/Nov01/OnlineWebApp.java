@@ -30,16 +30,16 @@ public class OnlineWebApp {
         System.out.println("Find item to shop and checkout");
     }
 
-    public void Payment(String email,String username) throws InvalidEmailLengthException
+    public void Payment(String email,String username,PaymentMethod paymentMethod) throws InvalidEmailLengthException
     {
         Shop(email,username);
         System.out.println("Make Payment");
     }
 
-    public void ecom(String email,String username) throws InvalidEmailLengthException
+    public void ecomApp(String email,String username, PaymentMethod paymentMethod) throws InvalidEmailLengthException
     {
         try{
-      Payment(email,username);}
+      Payment(email,username,paymentMethod);}
         catch (InvalidEmailLengthException e)
         {
             e.printStackTrace();
