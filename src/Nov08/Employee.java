@@ -7,16 +7,6 @@ public class Employee {
     String lastName;
     String email;
     Double Salary;
-
-    public Employee(int id, String Fname, String Lname, String Email, double salary) {
-        this.id = id;
-        this.firstName = Fname;
-        this.lastName = Lname;
-        this.email = Email;
-        this.Salary = salary;
-    }
-
-    // Getters
     public int getId() {
         return id;
     }
