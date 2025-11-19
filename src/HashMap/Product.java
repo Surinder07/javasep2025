@@ -1,6 +1,6 @@
 package HashMap;
 
-public class Product implements Comparable<Product>{
+public class Product implements Comparable<Product> {
     private String id;
     private String brand;
     private String productName;
