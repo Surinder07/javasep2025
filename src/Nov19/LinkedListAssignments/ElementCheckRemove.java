@@ -27,7 +27,6 @@ public class ElementCheckRemove {
                 search = true;
             }
         }
-
             if (search)
                 System.out.println("Removed " +target);
             else
