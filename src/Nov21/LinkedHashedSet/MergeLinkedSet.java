@@ -1,6 +1,7 @@
 package Nov21.LinkedHashedSet;
 
 import java.util.LinkedHashSet;
+import java.util.Scanner;
 
 public class MergeLinkedSet {
     public static void main(String[] args) {
@@ -20,5 +21,6 @@ public class MergeLinkedSet {
         {
            System.out.println(item);
         }
+
     }
 }
