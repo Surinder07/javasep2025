@@ -17,8 +17,5 @@ public class SizeRemoveElements {
 
         System.out.println("Size of the names after removal : " + hashSet.size());
 
-
-
-
     }
 }
